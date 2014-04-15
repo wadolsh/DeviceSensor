@@ -17,7 +17,7 @@ var express = require('express');
 var router = express();
 var server = http.createServer(router);
 
-router.use(express.static(path.resolve(__dirname, 'DeviceSensorCloudCode/public')));
+router.use(express.static(path.resolve(__dirname, 'device/www')));
 var messages = [];
 var sockets = [];
 
