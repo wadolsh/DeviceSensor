@@ -4,12 +4,10 @@
     <preference name="phonegap-version" value="3.3.0" />
     <name>DeviceSensor</name>
     <description>
-        端末のセンサー情報収集
     </description>
     <author href="" email="wadolsh@gmail.com">
         CHOI SUNGHO
     </author>
-    
     <gap:platform name="android" />
     <access origin="*" />
 </widget>
