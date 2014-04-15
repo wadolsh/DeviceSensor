@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "DeviceSensor": {
+            "applicationId": "ezET46qcu5J3naBykj1k18QaSYGPRkZdb44kNYtt", 
+            "masterKey": "3NJlUdWN8lKRu3b6y6VS02axAQ78L9BQYcU81ZNu"
+        }, 
+        "_default": {
+            "link": "DeviceSensor"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.18"
+    }
+}
