@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="deviceSensorApp">
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
@@ -7,21 +7,25 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-        <title>Hello World</title>
+        <title>Device Sensor</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-                <div id="deviceProperties"></div>
+        <div class="container" ng-controller="MainCtrl">>
+            <h1>Device Sensor</h1>
+            <div class="panel panel-default">
+              <div class="panel-heading">Panel heading without title</div>
+              <div class="panel-body">
+                {{ready}}
+              </div>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+        
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
         <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+        <script type="text/javascript" src="js/bridge.core.js"></script>
+        <script type="text/javascript" src="js/bridge.parse.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
