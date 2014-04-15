@@ -9,7 +9,6 @@
     <author href="" email="wadolsh@gmail.com">
         CHOI SUNGHO
     </author>
-    <content src="index.html" />
     <access origin="*" />
     <gap:platform name="android" />
 </widget>
